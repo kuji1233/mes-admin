@@ -21,8 +21,11 @@ public class CustomizeException extends RuntimeException {
         this.msg = msg;
     }
 
-    public CustomizeException(ResultStatus mkdirFailed) {
+    public CustomizeException(ResultStatus resultStatus) {
         
+    }
+
+    public CustomizeException(ResultStatus resultStatus, String msg) {
     }
 
     //toString方法

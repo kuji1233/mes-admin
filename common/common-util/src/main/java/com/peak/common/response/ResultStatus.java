@@ -47,9 +47,10 @@ public enum ResultStatus implements BaseErrorInfo {
      * 注册登录
      */
     LOGIN_SUCCESS(20000,"登录成功"),
-    REGISTER_SUCCESS(20001, "注册成功!"),
-    REGISTER_FAIL(200002, "注册失败!"),
-    VERIFICATION_CODE_FAIL(200003, "验证码不一致!"),
+    LOGIN_FAIL(20001,"登录失败"),
+    REGISTER_SUCCESS(20002, "注册成功!"),
+    REGISTER_FAIL(200003, "注册失败!"),
+    VERIFICATION_CODE_FAIL(200004, "验证码不一致!"),
 
     /**
      * check校验

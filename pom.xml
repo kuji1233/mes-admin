@@ -66,7 +66,7 @@
                 <version>${redis.version}</version>
             </dependency>
 
-
+            <!--springboot test-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
@@ -74,20 +74,21 @@
                 <scope>test</scope>
             </dependency>
 
+           <!-- swagger knife4j-->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
                 <version>${knife4j.version}</version>
             </dependency>
 
-            <!--            mysql驱动包-->
+            <!--  mysql驱动包-->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
             </dependency>
 
-            <!--    生成setter，getter    -->
+            <!--   lombok 生成setter，getter    -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
