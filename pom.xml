@@ -45,6 +45,8 @@
         <easyexcel.version>3.1.1</easyexcel.version>
 <!--        <swagger.version>2.7.0</swagger.version>-->
         <knife4j.version>2.0.7</knife4j.version>
+        <redis.version>2.2.1.RELEASE</redis.version>
+
     </properties>
 
     <!--  包管理器   -->
@@ -56,6 +58,14 @@
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid-alibaba.version}</version>
             </dependency>
+
+            <!--Redis-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${redis.version}</version>
+            </dependency>
+
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -153,18 +163,6 @@
                 <version>${velocity.version}</version>
             </dependency>
 
-<!--&lt;!&ndash;            swagger2&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>io.springfox</groupId>-->
-<!--                <artifactId>springfox-swagger2</artifactId>-->
-<!--                <version>${swagger.version}</version>-->
-<!--            </dependency>-->
-<!--            &lt;!&ndash;swagger ui&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>io.springfox</groupId>-->
-<!--                <artifactId>springfox-swagger-ui</artifactId>-->
-<!--                <version>${swagger.version}</version>-->
-<!--            </dependency>-->
 
             <!--jwt令牌-->
             <dependency>
