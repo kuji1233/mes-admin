@@ -43,9 +43,9 @@
         <velocity.version>2.0</velocity.version>
         <spring.crypto.version>5.3.2.RELEASE</spring.crypto.version>
         <easyexcel.version>3.1.1</easyexcel.version>
-<!--        <swagger.version>2.7.0</swagger.version>-->
-        <knife4j.version>2.0.7</knife4j.version>
+        <swagger.version>2.7.0</swagger.version>
         <redis.version>2.2.1.RELEASE</redis.version>
+        <shiro.version>1.7.1</shiro.version>
 
     </properties>
 
@@ -59,12 +59,36 @@
                 <version>${druid-alibaba.version}</version>
             </dependency>
 
+
+            <!--            shiro依赖-->
+            <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-spring-boot-web-starter -->
+            <!--            <dependency>-->
+            <!--                <groupId>org.apache.shiro</groupId>-->
+            <!--                <artifactId>shiro-spring-boot-web-starter</artifactId>-->
+            <!--                <version>1.8.0</version>-->
+            <!--            </dependency>-->
+
+<!--            shiro依赖-->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+
             <!--Redis-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
                 <version>${redis.version}</version>
             </dependency>
+
+            <!-- shiro+redis缓存插件 -->
+            <!--            <dependency>-->
+            <!--                <groupId>org.crazycake</groupId>-->
+            <!--                <artifactId>shiro-redis</artifactId>-->
+            <!--                <version>2.4.6</version>-->
+            <!--            </dependency>-->
+
 
             <!--springboot test-->
             <dependency>
@@ -74,11 +98,18 @@
                 <scope>test</scope>
             </dependency>
 
-           <!-- swagger knife4j-->
+
+            <!--swagger-->
             <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-spring-boot-starter</artifactId>
-                <version>${knife4j.version}</version>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <!--swagger ui-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
             </dependency>
 
             <!--  mysql驱动包-->
@@ -96,11 +127,11 @@
             </dependency>
 
             <!--   Spring Security 加密模块    -->
-            <dependency>
-                <groupId>org.springframework.security</groupId>
-                <artifactId>spring-security-crypto</artifactId>
-                <version>${spring.crypto.version}</version>
-            </dependency>
+            <!--            <dependency>-->
+            <!--                <groupId>org.springframework.security</groupId>-->
+            <!--                <artifactId>spring-security-crypto</artifactId>-->
+            <!--                <version>${spring.crypto.version}</version>-->
+            <!--            </dependency>-->
 
             <!-- 工具类依赖 -->
             <dependency>
@@ -134,13 +165,6 @@
                 <version>${commons-fileupload.version}</version>
             </dependency>
 
-
-            <!--        knife4j-->
-<!--            <dependency>-->
-<!--                <groupId>com.github.xiaoymin</groupId>-->
-<!--                <artifactId>knife4j-spring-boot-starter</artifactId>-->
-<!--                <version>${knife4j.version}</version>-->
-<!--            </dependency>-->
 
             <!--            打包工具-->
             <dependency>

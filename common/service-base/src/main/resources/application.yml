@@ -3,3 +3,5 @@ server:
 spring:
   application:
     name: notes
+#knife4j:
+#  enable: true

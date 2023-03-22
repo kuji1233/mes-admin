@@ -38,18 +38,18 @@ public enum ResultStatus implements BaseErrorInfo {
 
     DATA_ALREADY_EXISTS(10008, "数据已经存在"),
 
-    MKDIR_FAILED(10009,"目录创建失败"),
+    MKDIR_FAILED(10009, "目录创建失败"),
 
-    UPLOAD_FAILED(10010,"文件上传失败"),
-
+    UPLOAD_FAILED(10010, "文件上传失败"),
 
     /**
      * 注册登录
      */
-    LOGIN_SUCCESS(20000,"登录成功"),
-    LOGIN_FAIL(20001,"登录失败"),
+    LOGIN_SUCCESS(20000, "登录成功"),
+    LOGIN_FAIL(20001, "登录失败"),
     REGISTER_SUCCESS(20002, "注册成功!"),
     REGISTER_FAIL(200003, "注册失败!"),
+
     VERIFICATION_CODE_FAIL(200004, "验证码不一致!"),
 
     /**
@@ -79,9 +79,6 @@ public enum ResultStatus implements BaseErrorInfo {
     MIAO_SHA_OVER(40001, "商品已经秒杀完毕"),
     REPEATE_MIAOSHA(40002, "不能重复秒杀"),
     MIAOSHA_FAIL(40003, "秒杀失败");
-
-
-
 
     private Integer code;
     private String message;
